@@ -21,11 +21,12 @@ html {
 }
 .col {
   float: left;
-  padding: 0 8px !important;
+  padding: 0 8px;
 }
 .col-third {
-  width: 33.33333% !important;
+  width: 33.33333%;
 }
+
 .col-half {
   width: 50%;
 }
@@ -92,11 +93,22 @@ html {
 #nav .nav-arrow-down {
   font-size: 14px;
 }
+#header .menu-mobile-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+#header .menu-mobile-btn,
 #header .search-btn {
   color: white;
   float: right;
   line-height: 46px;
   padding: 0 21px;
+}
+#header .menu-mobile-btn:hover {
+  background-color: #ccc;
+  color: #000;
 }
 #header .search-btn:hover {
   background-color: #f44336;
@@ -127,7 +139,10 @@ html {
 }
 #content .content-section {
   width: 800px;
-  padding: 64px 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  max-width: 100%;
+  padding: 64px 0 112px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -151,7 +166,8 @@ html {
   line-height: 1.4;
 }
 #content .member-list {
-  padding-top: 47px;
+  padding-top: 32px;
+  text-align: center;
 }
 
 #content .member-name {
@@ -196,7 +212,7 @@ html {
 }
 
 .places-list {
-  margin-top: 32px;
+  margin-top: 16px;
   margin-bottom: 48px;
 }
 
